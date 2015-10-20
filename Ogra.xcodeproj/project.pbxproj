@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C3237681BD6D31000C8F7DC /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3237671BD6D31000C8F7DC /* Argo.framework */; };
+		2C3237691BD6D31D00C8F7DC /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3237671BD6D31000C8F7DC /* Argo.framework */; settings = {ASSET_TAGS = (); }; };
 		BFF261B71B66432500C5552D /* Ogra.h in Headers */ = {isa = PBXBuildFile; fileRef = BFF261B61B66432500C5552D /* Ogra.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BFF261E11B66435100C5552D /* OgraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF261E01B66435100C5552D /* OgraTests.swift */; };
 		BFF261EA1B6643A000C5552D /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF261E91B6643A000C5552D /* Encodable.swift */; };
@@ -46,6 +48,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C3237671BD6D31000C8F7DC /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Argo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFCCEBBF1B684613000BDFB5 /* licence.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = licence.md; sourceTree = "<group>"; };
 		BFF261B31B66432500C5552D /* Ogra.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ogra.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF261B61B66432500C5552D /* Ogra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ogra.h; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C3237681BD6D31000C8F7DC /* Argo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C3237691BD6D31D00C8F7DC /* Argo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +145,7 @@
 		BFF261ED1B66453600C5552D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2C3237671BD6D31000C8F7DC /* Argo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
