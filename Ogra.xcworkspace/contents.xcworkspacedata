@@ -4,4 +4,7 @@
    <FileRef
       location = "container:Ogra.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Carthage/Checkouts/Argo/Argo.xcodeproj">
+   </FileRef>
 </Workspace>
