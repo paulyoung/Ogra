@@ -11,10 +11,7 @@
 		BFF261E11B66435100C5552D /* OgraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF261E01B66435100C5552D /* OgraTests.swift */; };
 		BFF261EA1B6643A000C5552D /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF261E91B6643A000C5552D /* Encodable.swift */; };
 		BFF261EB1B6643A000C5552D /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF261E91B6643A000C5552D /* Encodable.swift */; };
-		BFF261F11B66459000C5552D /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF261F01B66459000C5552D /* Argo.framework */; };
-		BFF261F31B66459F00C5552D /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF261F21B66459F00C5552D /* Argo.framework */; };
 		BFF261F81B66496F00C5552D /* OgraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF261F61B66496F00C5552D /* OgraModel.swift */; };
-		BFFBEDA71B66F2D1004DCB22 /* Argo.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFF261F21B66459F00C5552D /* Argo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +40,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BFFBEDA71B66F2D1004DCB22 /* Argo.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,8 +57,6 @@
 		BFF261E01B66435100C5552D /* OgraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OgraTests.swift; sourceTree = "<group>"; };
 		BFF261E21B66435100C5552D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFF261E91B6643A000C5552D /* Encodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
-		BFF261F01B66459000C5552D /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/iOS/Argo.framework; sourceTree = "<group>"; };
-		BFF261F21B66459F00C5552D /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/Mac/Argo.framework; sourceTree = "<group>"; };
 		BFF261F51B66471600C5552D /* readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		BFF261F61B66496F00C5552D /* OgraModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OgraModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,7 +66,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFF261F11B66459000C5552D /* Argo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +73,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFF261F31B66459F00C5552D /* Argo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,26 +140,8 @@
 		BFF261ED1B66453600C5552D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BFF261EE1B66457900C5552D /* iOS */,
-				BFF261EF1B66457E00C5552D /* Mac */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BFF261EE1B66457900C5552D /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				BFF261F01B66459000C5552D /* Argo.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		BFF261EF1B66457E00C5552D /* Mac */ = {
-			isa = PBXGroup;
-			children = (
-				BFF261F21B66459F00C5552D /* Argo.framework */,
-			);
-			name = Mac;
 			sourceTree = "<group>";
 		};
 		BFF261F41B66464800C5552D /* Resources */ = {
@@ -455,10 +429,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = Ogra/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -478,10 +448,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = Ogra/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -501,10 +467,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Ogra/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -528,10 +490,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = Ogra/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
